@@ -1,25 +1,16 @@
-# 🤖 Bot Mirza Panel
-
-
-# این پروژه بطور موقت آرشیو شده است. احتمالا در آینده دوباره برمی‌گردیم و ادامه می‌دهیم.
-
-# This project is temporarily archived. We are likely to return and continue in the future.
-
+# 🤖 Bot GozarBot
 
 A Powerful Bot for Selling VPN Services with Auto Configuration Build.
 
 <p align="center">
-    <a href="https://t.me/mirzapanel" target="_blank">
-        <img src="https://img.shields.io/badge/Telegram-Group-blue?style=flat-square&logo=telegram" alt="Telegram Group"/>
+    <a href="https://github.com/Alioninja/gozarbot" target="_blank">
+        <img src="https://img.shields.io/github/stars/Alioninja/gozarbot?style=social" alt="GitHub Stars"/>
     </a>
-    <a href="https://github.com/mahdiMGF2/botmirzapanel" target="_blank">
-        <img src="https://img.shields.io/github/stars/mahdiMGF2/botmirzapanel?style=social" alt="GitHub Stars"/>
+    <a href="https://img.shields.io/github/forks/Alioninja/gozarbot?style=flat-square" target="_blank">
+        <img src="https://img.shields.io/github/forks/Alioninja/gozarbot?style=flat-square" alt="GitHub Forks"/>
     </a>
-    <a href="https://img.shields.io/github/forks/mahdiMGF2/botmirzapanel?style=flat-square" target="_blank">
-        <img src="https://img.shields.io/github/forks/mahdiMGF2/botmirzapanel?style=flat-square" alt="GitHub Forks"/>
-    </a>
-    <a href="https://github.com/mahdiMGF2/botmirzapanel/issues" target="_blank">
-        <img src="https://img.shields.io/github/issues/mahdiMGF2/botmirzapanel?style=flat-square" alt="GitHub Issues"/>
+    <a href="https://github.com/Alioninja/gozarbot/issues" target="_blank">
+        <img src="https://img.shields.io/github/issues/Alioninja/gozarbot?style=flat-square" alt="GitHub Issues"/>
     </a>
 </p>
 
@@ -41,9 +32,9 @@ A Powerful Bot for Selling VPN Services with Auto Configuration Build.
 
 ## ✨ Overview
 
-**Mirza Bot Panel** is a feature-rich Telegram bot designed for selling VPN services for platforms like **Marzban** and **3x-ui panels**. This bot simplifies the process of VPN subscription sales, enabling seamless automation, configuration building, and user management.
+**GozarBot** is a feature-rich Telegram bot designed for selling VPN services for platforms like **Marzban** and **3x-ui panels**. This bot simplifies the process of VPN subscription sales, enabling seamless automation, configuration building, and user management.
 
-Mirza Panel comes in two versions:  
+GozarBot comes in two versions:  
 1. **Free Version** 🆓: Offers basic functionalities to get started with VPN sales.  
 2. **Subscription Version** 💎: Provides advanced features for businesses looking for more customization, detailed analytics, and enhanced management options.  
 
@@ -85,39 +76,6 @@ Whether you’re offering trial accounts or managing large-scale VPN services, t
 
 ---
 
-### 🔹 **Subscription Version Features**
-
-In addition to the features of the Free Version, the Subscription Version includes:
-
-- 🔐 Admin Access Levels (Management, Sales, Support)
-- 🧾 View and Manage All Users in the Bot
-- 🎟️ Advanced Discount Code Management
-- 🤝 Reseller Support
-- 💰 Refund and Service Removal Options
-- ⚡ Advanced Panel-Specific Bandwidth Management
-- 🔄 Manage Panel Status
-- 🔑 Separate Panels for Test Accounts
-- ⏳ Set Service Purchase Durations
-- 📤 Send Configurations Directly After Payment
-- 🔄 Renewal and Volume Purchases (Even for Non-Existing Services)
-- 💳 Inventory Control (Set Minimum and Maximum Inventory Increases)
-- 📩 Support Messages with Admin Responses
-- 🔗 Advanced Subset Management
-- 🛒 Bulk Purchase Options
-- 🆔 Multiple Username Creation Methods
-- 🔍 Quick Service Search
-- 📅 Advanced Cron Job Settings
-- 📊 Comprehensive Bot Statistics
-- ❌ Limit Configuration Creation per Panel
-- 🖥️ Web Panel Integration
-- 🌍 Change Location of Services
-- 🔄 Transfer Services Between Users
-- 💱 Rial Exchange Payment Gateways
-
-📌 **Subscription Purchase Guide**: [View Guide](https://t.me/mirzaperimium/4)
-
----
-
 ## 🚀 Installation
 
 ### Prerequisites
@@ -131,7 +89,7 @@ Ensure you have the following before installation:
 Run the following command in your server terminal:
 
 ```bash
-curl -o install.sh -L https://raw.githubusercontent.com/mahdiMGF2/botmirzapanel/main/install.sh && bash install.sh
+curl -o install.sh -L https://raw.githubusercontent.com/Alioninja/gozarbot/main/install.sh && bash install.sh
 ```
 
 When prompted, **select option 1** to complete the installation.
@@ -145,7 +103,7 @@ When prompted, **select option 1** to complete the installation.
 To install the beta version, run:
 
 ```bash
-curl -o install.sh -L https://raw.githubusercontent.com/mahdiMGF2/botmirzapanel/main/install.sh && bash install.sh -beta
+curl -o install.sh -L https://raw.githubusercontent.com/Alioninja/gozarbot/main/install.sh && bash install.sh -beta
 ```
 
 ---
@@ -155,7 +113,7 @@ curl -o install.sh -L https://raw.githubusercontent.com/mahdiMGF2/botmirzapanel/
 To update your bot to the latest version, use the following command:
 
 ```bash
-curl -o install.sh -L https://raw.githubusercontent.com/mahdiMGF2/botmirzapanel/main/install.sh && bash install.sh -update
+curl -o install.sh -L https://raw.githubusercontent.com/Alioninja/gozarbot/main/install.sh && bash install.sh -update
 ```
 
 ---
@@ -165,7 +123,7 @@ curl -o install.sh -L https://raw.githubusercontent.com/mahdiMGF2/botmirzapanel/
 If you want to completely remove the bot from your server, run the following command:
 
 ```bash
-curl -o install.sh -L https://raw.githubusercontent.com/mahdiMGF2/botmirzapanel/main/install.sh && bash install.sh
+curl -o install.sh -L https://raw.githubusercontent.com/Alioninja/gozarbot/main/install.sh && bash install.sh
 ```
 
 When prompted, **select option 3** to remove the bot.
@@ -174,20 +132,11 @@ When prompted, **select option 3** to remove the bot.
 
 ## 📱 Demo Bot
 
-Want to see Mirza Panel in action? Try the demo bot here:  
+Want to see GozarBot in action? Try the demo bot here:  
 👉 [Demo Bot](https://t.me/marzbaninfobot)
 
 ---
 
-## 💵 Financial Support
-
-If you find **Mirza Panel** helpful and would like to support its development, you can make a financial contribution via cryptocurrency.
-
-- **TRX Network (TRC20)**:  
-  `TNvwhpNtXxKMFFeVzGR8GNZ6gL4aECituU`
-
-Your support ensures continued updates and improvements for this project. Thank you! 🙌
-
 ### Contributors
 
-![Contributors](https://contrib.rocks/image?repo=mahdiMGF2/botmirzapanel)
+![Contributors](https://contrib.rocks/image?repo=Alioninja/gozarbot)

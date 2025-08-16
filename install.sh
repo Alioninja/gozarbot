@@ -45,19 +45,18 @@ function show_logo() {
     clear
     echo -e "\033[1;34m"
     echo "================================================================================="
-    echo "  __  __ _____ _____   ______           _____        _   _ ______ _       "
-    echo " |  \/  |_   _|  __ \ |___  /   /\     |  __ \ /\   | \ | |  ____| |      "
-    echo " | \  / | | | | |__) |   / /   /  \    | |__) /  \  |  \| | |__  | |      "
-    echo " | |\/| | | | |  _  /   / /   / /\ \   |  ___/ /\ \ | . \ |  __| | |      "
-    echo " | |  | |_| |_| | \ \  / /__ / ____ \  | |  / ____ \| |\  | |____| |____  "
-    echo " | |_|  |_|_____|_|  \_\/_____/_/    \_\ |_| /_/    \_\_| \_|______|______| "
+    echo " "
+    echo "        ██████╗  ██████╗ ███████╗ █████╗ ██████╗ ██████╗  ██████╗ ████████╗"
+    echo "      ██╔════╝ ██╔═══██╗╚══███╔╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝"
+    echo "      ██║  ███╗██║   ██║  ███╔╝ ███████║██████╔╝██████╔╝██║   ██║   ██║   "
+    echo "      ██║   ██║██║   ██║ ███╔╝  ██╔══██║██╔══██╗██╔══██╗██║   ██║   ██║   "
+    echo "      ╚██████╔╝╚██████╔╝███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝   ██║   "
+    echo "       ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝    ╚═╝   "
+    echo " "
     echo "================================================================================="
     echo -e "\033[0m"
     echo ""
-    echo -e "\033[1;36mVersion:\033[0m \033[33m0.14\033[0m"
-    echo -e "\033[1;36mTelegram Channel:\033[0m \033[34mhttps://t.me/mirzapanel\033[0m"
-    echo -e "\033[1;36mTelegram Group:  \033[0m \033[34mhttps://t.me/mirzapanelgroup\033[0m"
-    echo -e "\033[1;36m⭐️Buy Pro Version⭐️: \033[0m \033[34mhttps://t.me/mirzaperimium\033[0m"
+    echo -e "\033[1;36mVersion:\033[0m \033[33m1.00\033[0m"
     echo ""
     echo -e "\033[1;36mInstallation Status:\033[0m"
     check_bot_status
@@ -411,13 +410,13 @@ function install_bot() {
     fi
 
     # Default to latest release
-    ZIP_URL=$(curl -s https://api.github.com/repos/mahdiMGF2/botmirzapanel/releases/latest | grep "zipball_url" | cut -d '"' -f 4)
+    ZIP_URL=$(curl -s https://api.github.com/repos/Alioninja/gozarbot/releases/latest | grep "zipball_url" | cut -d '"' -f 4)
 
 # Check for version flag
 if [[ "$1" == "-v" && "$2" == "beta" ]] || [[ "$1" == "-beta" ]] || [[ "$1" == "-" && "$2" == "beta" ]]; then
-    ZIP_URL="https://github.com/mahdiMGF2/botmirzapanel/archive/refs/heads/main.zip"
+    ZIP_URL="https://api.github.com/repos/Alioninja/gozarbot/zipball/main"
 elif [[ "$1" == "-v" && -n "$2" ]]; then
-    ZIP_URL="https://github.com/mahdiMGF2/botmirzapanel/archive/refs/tags/$2.zip"
+    ZIP_URL="https://api.github.com/repos/Alioninja/gozarbot/zipball/$2"
 fi
 
     # Download and extract the repository
@@ -1005,11 +1004,11 @@ function install_bot_with_marzban() {
     }
 
     # Download bot files
-    ZIP_URL=$(curl -s https://api.github.com/repos/mahdiMGF2/botmirzapanel/releases/latest | grep "zipball_url" | cut -d '"' -f 4)
+    ZIP_URL=$(curl -s https://api.github.com/repos/Alioninja/gozarbot/releases/latest | grep "zipball_url" | cut -d '"' -f 4)
     if [[ "$1" == "-v" && "$2" == "beta" ]] || [[ "$1" == "-beta" ]] || [[ "$1" == "-" && "$2" == "beta" ]]; then
-        ZIP_URL="https://github.com/mahdiMGF2/botmirzapanel/archive/refs/heads/main.zip"
+        ZIP_URL="https://api.github.com/repos/Alioninja/gozarbot/zipball/main"
     elif [[ "$1" == "-v" && -n "$2" ]]; then
-        ZIP_URL="https://github.com/mahdiMGF2/botmirzapanel/archive/refs/tags/$2.zip"
+        ZIP_URL="https://api.github.com/repos/Alioninja/gozarbot/zipball/$2"
     fi
 
     TEMP_DIR="/tmp/mirzabot"
@@ -1296,9 +1295,9 @@ function update_bot() {
     # Fetch latest release from GitHub
     # Check for version flag
     if [[ "$1" == "-beta" ]] || [[ "$1" == "-v" && "$2" == "beta" ]]; then
-        ZIP_URL="https://github.com/mahdiMGF2/botmirzapanel/archive/refs/heads/main.zip"
+        ZIP_URL="https://api.github.com/repos/Alioninja/gozarbot/zipball/main"
     else
-        ZIP_URL=$(curl -s https://api.github.com/repos/mahdiMGF2/botmirzapanel/releases/latest | grep "zipball_url" | cut -d '"' -f4)
+        ZIP_URL=$(curl -s https://api.github.com/repos/Alioninja/gozarbot/releases/latest | grep "zipball_url" | cut -d '"' -f4)
     fi
 
     # Create temporary directory
@@ -2071,7 +2070,7 @@ EOF"
     # Clone a Fresh Copy of the Bot's Source Code
     BOT_DIR="/var/www/html/$BOT_NAME"
     echo -e "\033[33mCloning bot's source code...\033[0m"
-    git clone https://github.com/mahdiMGF2/botmirzapanel.git "$BOT_DIR" || {
+    git clone https://github.com/Alioninja/gozarbot.git "$BOT_DIR" || {
         echo -e "\033[31mError: Failed to clone the repository.\033[0m"
         return 1
     }
@@ -2238,7 +2237,7 @@ function update_additional_bot() {
     fi
 
     # Clone the new version of the bot
-    if ! git clone https://github.com/mahdiMGF2/botmirzapanel.git "$BOT_PATH"; then
+    if ! git clone https://github.com/Alioninja/gozarbot.git "$BOT_PATH"; then
         echo -e "\033[31mFailed to clone the repository. Exiting...\033[0m"
         return 1
     fi
